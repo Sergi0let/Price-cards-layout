@@ -3,85 +3,98 @@
 * {
   box-sizing: border-box;
 }
+}
 body {
   display: flex;
+
   background-color: #141b1c;
   height: 100vh;
 }
+
 .content {
-  font-family: Montserrat, 'sans-serif';
+  display: flex;
   margin: auto;
+  max-height: 770px;
+}
+.price-card {
+  font-family: Montserrat, sans-serif;
   font-size: 15px;
   font-weight: 300;
   color: #fff;
-  // .content__column
-}
-.column-content {
-  display: flex;
-  // .column-content__item
+  overflow: hidden;
+  width: 380px;
+  text-align: center;
+  background-color: #334247;
+  margin: 8px;
+  position: relative;
 
-  &__item {
-    //  text-transform: uppercase;
-    overflow: hidden;
-    width: 380px;
-    text-align: center;
-    background-color: #334247;
-    margin: 8px;
-    position: relative;
-  }
-
-  // .column-content__titel
-
-  &__titel {
-    font-size: 35px;
-    line-height: 39px;
-    font-weight: 700;
-    padding-top: 31px;
-    padding-bottom: 2px;
-    text-transform: capitalize;
-  }
-
-  // .column-content__subtitle
-
-  &__subtitle {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 300;
-    padding-bottom: 33px;
-  }
-
-  // .column-content__price
+  // .price-card__price
 
   &__price {
     font-size: 55px;
     font-weight: 700;
     line-height: 105px;
     background-color: $color-first-column;
-    // .column-content__price_second
-
-    &_second {
-      background-color: $color-second-column;
-    }
-    &_third {
-      background-color: $color-third-column;
-    }
   }
 
-  // .column-content__descriotion
+  ._price_blue {
+    background-color: $color-second-column;
+  }
+  ._orange {
+    background-color: $color-third-column;
+  }
+  // .price-card__description
 
-  &__descriotion {
+  &__description {
     line-height: 18px;
     padding: 40px 27px;
   }
 
-  // .column-content__list
+  // .price-card__options-list
 
-  &__list {
+  &__options-list {
   }
 
-  // .column-content__link
+  // .price-card__order-btn
 
-  &__link {
+  &__order-btn {
+  }
+}
+.title-price {
+  // .title-price__title
+
+  &__title {
+    font-size: 35px;
+    line-height: 43px;
+    font-weight: 700;
+    padding-top: 31px;
+  }
+
+  // .title-price__sub-title
+
+  &__sub-title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 33px;
+  }
+  &__popular {
+    text-transform: uppercase;
+    position: absolute;
+    right: -30px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    background-color: #dc3f45;
+    transform: rotate(45deg);
+    width: 150px;
+    overflow: hidden;
+  }
+}
+.options-list-card {
+  // .options-list-card__item
+
+  &__item {
     text-align: left;
     padding-left: 59px;
     line-height: 50px;
@@ -89,24 +102,18 @@ body {
     &:nth-child(odd) {
       background-color: #2a3438;
     }
-    // .column-content__link_second
-
-    &_second {
-      background: url('img/blue-check.svg') 22px center no-repeat;
-    }
-    &_third {
-      background: url('img/orange-check.svg') 22px center no-repeat;
-    }
   }
-
-  // .column-content__control
-
-  &__control {
-    display: flex;
-    height: 119px;
-  }
-
-  // .column-content__btn
+}
+._blue-img {
+  background: url('img/blue-check.svg') 22px center no-repeat;
+}
+._orange-img {
+  background: url('img/orange-check.svg') 22px center no-repeat;
+}
+.order-btn-price {
+  display: flex;
+  height: 119px;
+  // .order-btn-price__btn
 
   &__btn {
     margin: auto;
@@ -122,26 +129,11 @@ body {
     &:hover {
       opacity: 0.5;
     }
-    // .column-content__btn_second
-
-    &_second {
-      background-color: $color-second-column;
-    }
-    &_third {
-      background-color: $color-third-column;
-    }
   }
-  &__popular {
-    text-transform: uppercase;
-    position: absolute;
-    right: -30px;
-    top: 30px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 25px;
-    background-color: #dc3f45;
-    transform: rotate(45deg);
-    width: 150px;
-    overflow: hidden;
-  }
+}
+._blue {
+  background-color: $color-second-column;
+}
+._orange {
+  background-color: $color-third-column;
 }
