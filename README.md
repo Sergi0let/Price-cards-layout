@@ -1,6 +1,6 @@
 # Price-cards-layout
 <h1>Price Card</h1>
-<hr />
+
 <a href="#">Site link</a>
 <br />
 <p>Three adaptive price card in row.</p>
@@ -14,4 +14,5 @@
   <li>Sass (Scss)</li>
   <li>BEM methodology</li>
 </ul>
-
+<br />
+<h5>Author</h5>
