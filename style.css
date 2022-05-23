@@ -64,17 +64,16 @@ body {
 }
 
 .content {
-  font-family: Montserrat, "sans-serif";
+  display: flex;
   margin: auto;
+  max-height: 770px;
+}
+
+.price-card {
+  font-family: Montserrat, sans-serif;
   font-size: 15px;
   font-weight: 300;
   color: #fff;
-}
-
-.column-content {
-  display: flex;
-}
-.column-content__item {
   overflow: hidden;
   width: 380px;
   text-align: center;
@@ -82,76 +81,34 @@ body {
   margin: 8px;
   position: relative;
 }
-.column-content__titel {
-  font-size: 35px;
-  line-height: 39px;
-  font-weight: 700;
-  padding-top: 31px;
-  padding-bottom: 2px;
-  text-transform: capitalize;
-}
-.column-content__subtitle {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 300;
-  padding-bottom: 33px;
-}
-.column-content__price {
+.price-card__price {
   font-size: 55px;
   font-weight: 700;
   line-height: 105px;
   background-color: #5bb189;
 }
-.column-content__price_second {
+.price-card ._price_blue {
   background-color: #3a6ba5;
 }
-.column-content__price_third {
+.price-card ._orange {
   background-color: #ec632a;
 }
-.column-content__descriotion {
+.price-card__description {
   line-height: 18px;
   padding: 40px 27px;
 }
-.column-content__link {
-  text-align: left;
-  padding-left: 59px;
-  line-height: 50px;
-  background: url("img/green-check.svg") 22px center no-repeat;
+.title-price__title {
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 700;
+  padding-top: 31px;
 }
-.column-content__link:nth-child(odd) {
-  background-color: #2a3438;
+.title-price__sub-title {
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 33px;
 }
-.column-content__link_second {
-  background: url("img/blue-check.svg") 22px center no-repeat;
-}
-.column-content__link_third {
-  background: url("img/orange-check.svg") 22px center no-repeat;
-}
-.column-content__control {
-  display: flex;
-  height: 119px;
-}
-.column-content__btn {
-  margin: auto;
-  line-height: 40px;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  background-color: #5bb189;
-  padding: 0 33px;
-  border-radius: 20px;
-  transition: opacity 0.3s ease 0s;
-}
-.column-content__btn:hover {
-  opacity: 0.5;
-}
-.column-content__btn_second {
-  background-color: #3a6ba5;
-}
-.column-content__btn_third {
-  background-color: #ec632a;
-}
-.column-content__popular {
+.title-price__popular {
   text-transform: uppercase;
   position: absolute;
   right: -30px;
@@ -163,6 +120,51 @@ body {
   transform: rotate(45deg);
   width: 150px;
   overflow: hidden;
+}
+
+.options-list-card__item {
+  text-align: left;
+  padding-left: 59px;
+  line-height: 50px;
+  background: url("img/green-check.svg") 22px center no-repeat;
+}
+.options-list-card__item:nth-child(odd) {
+  background-color: #2a3438;
+}
+
+._blue-img {
+  background: url("img/blue-check.svg") 22px center no-repeat;
+}
+
+._orange-img {
+  background: url("img/orange-check.svg") 22px center no-repeat;
+}
+
+.order-btn-price {
+  display: flex;
+  height: 119px;
+}
+.order-btn-price__btn {
+  margin: auto;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #5bb189;
+  padding: 0 33px;
+  border-radius: 20px;
+  transition: opacity 0.3s ease 0s;
+}
+.order-btn-price__btn:hover {
+  opacity: 0.5;
+}
+
+._blue {
+  background-color: #3a6ba5;
+}
+
+._orange {
+  background-color: #ec632a;
 }
 
 /*# sourceMappingURL=style.css.map */
