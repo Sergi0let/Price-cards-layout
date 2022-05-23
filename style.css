@@ -78,7 +78,7 @@ body {
   width: 380px;
   text-align: center;
   background-color: #334247;
-  margin: 9px;
+  margin: 0 8px;
   position: relative;
 }
 .price-card__price {
