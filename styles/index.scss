@@ -1,0 +1,131 @@
+@import 'null.scss';
+@import 'variables.scss';
+
+body {
+  display: flex;
+
+  background-color: #141b1c;
+  height: 100vh;
+}
+.content {
+  font-family: Montserrat, 'sans-serif';
+  margin: auto;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  // .content__column
+
+  &__column {
+  }
+}
+.column-content {
+  display: flex;
+  // .column-content__item
+
+  &__item {
+    width: 380px;
+    text-align: center;
+    background-color: #334247;
+    margin: 8px;
+  }
+
+  // .column-content__titel
+
+  &__titel {
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 700;
+    padding-top: 33px;
+  }
+
+  // .column-content__subtitle
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    padding-bottom: 33px;
+  }
+
+  // .column-content__price
+
+  &__price {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 105px;
+    background-color: $color-first-column;
+    // .column-content__price_second
+
+    &_second {
+      background-color: $color-second-column;
+    }
+    &_third {
+      background-color: $color-third-column;
+    }
+  }
+
+  // .column-content__descriotion
+
+  &__descriotion {
+    line-height: 18px;
+    padding: 40px 27px;
+  }
+
+  // .column-content__list
+
+  &__list {
+  }
+
+  // .column-content__link
+
+  &__link {
+    text-align: left;
+    padding-left: 59px;
+    line-height: 50px;
+    background: url('img/green-check.svg') 22px center no-repeat;
+    &:nth-child(odd) {
+      background-color: #2a3438;
+    }
+    // .column-content__link_second
+
+    &_second {
+      background: url('img/blue-check.svg') 22px center no-repeat;
+    }
+    &_third {
+      background: url('img/orange-check.svg') 22px center no-repeat;
+    }
+  }
+
+  // .column-content__control
+
+  &__control {
+    display: flex;
+    height: 119px;
+  }
+
+  // .column-content__btn
+
+  &__btn {
+    margin: auto;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background-color: $color-first-column;
+    padding: 0 28px;
+    border-radius: 20px;
+    transition: opacity 0.3s ease 0s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+    // .column-content__btn_second
+
+    &_second {
+      background-color: $color-second-column;
+    }
+    &_third {
+      background-color: $color-third-column;
+    }
+  }
+}
