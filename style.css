@@ -53,16 +53,6 @@ h6 {
   font-size: inherit;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  background-color: #141b1c;
-  height: 100vh;
-}
-
 .content {
   display: flex;
   margin: auto;
@@ -97,6 +87,7 @@ body {
   line-height: 18px;
   padding: 40px 27px;
 }
+
 .title-price__title {
   font-size: 35px;
   line-height: 43px;
@@ -159,12 +150,18 @@ body {
   opacity: 0.5;
 }
 
-._blue {
+._blue-card {
   background-color: #3a6ba5;
 }
 
-._orange {
+._orange-card {
   background-color: #ec632a;
+}
+
+body {
+  display: flex;
+  background-color: #141b1c;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
