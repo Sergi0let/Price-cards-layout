@@ -5,6 +5,7 @@
 <br />
 <p>Three adaptive price card in row.</p>
 
+
 <h3>The tech stack is:</h3>
 <ul>
   <li>HTML5</li>
@@ -15,4 +16,4 @@
   <li>BEM methodology</li>
 </ul>
 <br />
-<h5>Author</h5>
+<h5>Sergij Vashkevych</h5>
