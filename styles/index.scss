@@ -1,4 +1,4 @@
-@import 'null.scss';
+@import 'reset.scss';
 @import 'variables.scss';
 * {
   box-sizing: border-box;
@@ -28,8 +28,6 @@ body {
   margin: 0 8px;
   position: relative;
 
-  // .price-card__price
-
   &__price {
     font-size: 55px;
     font-weight: 700;
@@ -43,34 +41,19 @@ body {
   ._orange {
     background-color: $color-third-column;
   }
-  // .price-card__description
 
   &__description {
     line-height: 18px;
     padding: 40px 27px;
   }
-
-  // .price-card__options-list
-
-  &__options-list {
-  }
-
-  // .price-card__order-btn
-
-  &__order-btn {
-  }
 }
 .title-price {
-  // .title-price__title
-
   &__title {
     font-size: 35px;
     line-height: 43px;
     font-weight: 700;
     padding-top: 33px;
   }
-
-  // .title-price__sub-title
 
   &__sub-title {
     font-size: 20px;
@@ -92,8 +75,6 @@ body {
   }
 }
 .options-list-card {
-  // .options-list-card__item
-
   &__item {
     text-align: left;
     padding-left: 59px;
@@ -113,7 +94,6 @@ body {
 .order-btn-price {
   display: flex;
   height: 119px;
-  // .order-btn-price__btn
 
   &__btn {
     margin: auto;
@@ -125,7 +105,6 @@ body {
     padding: 0 33px;
     border-radius: 20px;
     transition: opacity 0.3s ease 0s;
-
     &:hover {
       opacity: 0.5;
     }
