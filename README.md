@@ -1,7 +1,7 @@
 # Price-cards-layout
 <h1>Price Card</h1>
 
-<a href="#">Site link</a>
+<a href="https://sergi0let.github.io/Price-cards-layout/">Site link</a>
 <br />
 <p>Three adaptive price card in row.</p>
 
