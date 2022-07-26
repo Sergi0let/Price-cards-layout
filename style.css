@@ -122,12 +122,10 @@ h6 {
 .options-list-card__item:nth-child(odd) {
   background-color: #2a3438;
 }
-
-._blue-img {
+.options-list-card__item_blue-img {
   background: url("img/blue-check.svg") 22px center no-repeat;
 }
-
-._orange-img {
+.options-list-card__item_orange-img {
   background: url("img/orange-check.svg") 22px center no-repeat;
 }
 
